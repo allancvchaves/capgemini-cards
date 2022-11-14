@@ -12,12 +12,17 @@ namespace CapgeminiCard.API.Helper
 
             int[] lastFourArray = lastFour.Select(n => int.Parse(n.ToString())).ToArray();
 
-            var temp = lastFourArray[0];
+            int temp;
             for (int i = 0; i < cvv; i++)
             {
-                lastFourArray[i] = lastFourArray[i + 1];
+                for (int j = 0; j < lastFourArray.Length - 1; j++)
+                {
+                    temp = lastFourArray[0];
+                    lastFourArray[0] = lastFourArray[j + 1];
+                    lastFourArray[j + 1] = temp;
+                }
             }
-            lastFourArray[lastFourArray.Length - 1] = temp;
+
 
             return long.Parse(string.Concat(lastFourArray));
         }

@@ -18,6 +18,6 @@ namespace CapgeminiCard.API.Repositories
             return customerCard.CardId;
         }
 
-        public async Task<Card> GetCustomerCardAsync(int id) => await _context.Cards.FindAsync(id);
+        public async Task<Card> GetCustomerCard(int id) => await _context.Cards.FindAsync(id);
     }
 }
