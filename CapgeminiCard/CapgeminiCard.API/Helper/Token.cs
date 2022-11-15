@@ -33,6 +33,7 @@ namespace CapgeminiCard.API.Helper
                 || cardToValidate.CustomerId != validCard.CustomerId)
                 return false;
 
+            Console.WriteLine(validCard.CardNumber);
             var token = Generate(validCard.CardNumber, cardToValidate.CVV);
 
             return token == cardToValidate.Token;
