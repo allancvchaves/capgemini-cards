@@ -11,7 +11,7 @@ namespace CapgeminiCard.API.Repositories
             _context = context;
         }
 
-        public async Task<int> Add(Card customerCard)
+        public async Task<int> AddCard(Card customerCard)
         {
             await _context.Cards.AddAsync(customerCard);
             await _context.SaveChangesAsync();

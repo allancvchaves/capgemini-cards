@@ -40,7 +40,7 @@ namespace CapgeminiCard.API.Controllers
             {
                 token = new Token().Generate(cardDTO.CardNumber, cardDTO.CVV);
                 card.CreationDate = DateTime.UtcNow;
-                card.CardId = await _cardRepository.Add(card);
+                card.CardId = await _cardRepository.AddCard(card);
             }
             catch (Exception ex)
             {

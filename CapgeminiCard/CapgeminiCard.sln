@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapgeminiCard.API", "CapgeminiCard.API\CapgeminiCard.API.csproj", "{64F2F915-DD9C-4D26-869F-A623F70EB1BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapgeminiCard.Test", "CapgeminiCard.Test\CapgeminiCard.Test.csproj", "{CC358A60-5827-4725-B876-237A537A2E38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapgeminiCard.Tests", "CapgeminiCard.Test\CapgeminiCard.Tests.csproj", "{CC358A60-5827-4725-B876-237A537A2E38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
